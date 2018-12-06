@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <title>Remote Risk Management</title>
+  <meta charset="UTF-8">
+  <meta content="vehicle tracking, gps tracking, cellphone tracking" name="Keywords" />
+  <meta content="Affordable vehicle tracking and GPS cellphone tracking for small business and personal use" name="Description" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styleAsh.css">
+
+  <script type="text/javascript">
+    var mobileURL = "http://52.20.124.240/gmpmobile.aspx";
+    var mapURL = "http://52.20.124.240/gmap.aspx";
+    var siteName = "RemoteRiskMgmt";
+
+
+    function checkform() {
+      if (document.myForm.name.value == "") {
+        alert('Need an account name');
+        return false;
+      }
+      if (document.myForm.gpasswd.value == "") {
+        document.myForm.gpasswd.value = "0000";
+      }
+      return true;//true means it will be submitted
+    }
+
+    //text for the info DIV if mobile
+    //var mText = "1. LOAD will refresh the page and center map on current location.<br>" +
+    //"2. To create a geofence, zoom and move map to frame the fence area, enter an email or phone number in the textBox, click the FENCE button.<br>";
+
+    //text for the info DIV if desktop
+    //var dText = '1. By default, only the current postion is shown. Click the "Breadcrumbs" box to see all the markers for the day.<br>' +
+    //'2. Hover or left click markers for addresses and other info.<br>' +
+    //'3. Right-click 2 markers for time and distance info between the 2 markers.<br>' +
+    // '4. Blue calendar days have tracks.<br>';
+    var isMobile = {
+      Android: function () {
+        return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+      },
+      Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+      },
+      any: function () {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+      }
+    };
+
+    function showBrowser() {
+      if (isMobile.any()) {
+        document.getElementById("info").innerHTML = mText;
+      } else {
+        document.getElementById("info").innerHTML = dText;
+      }
+      document.getElementById("welcome").innerHTML = siteName;
+    }
+
+
+  </script>
+
+</head>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1> Tracking Portal </h1>
+
+
+<body onload="showBrowser()">
+
+
+
+
+
+  <form class="login-form" id="myForm" name="myForm" method="get" action="" onSubmit="return checkform()">
+
+    <p class="login-text">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-lock fa-stack-1x"></i>
+      </span>
+    </p>
+
+    <div class="col-12 text-center">
+      <input type="text" class="login-username" autofocus="true" required="true" name="name" placeholder="Account Name" />
+
+      <input type="text" class="login-password" name="gpasswd" placeholder="Password" />
+
+      <input type="hidden" name="gzoom" value="15">
+
+
+      <div class="col-12 text-center">
+        <input type="submit" class="btn btn-secondary grey-background silver" onclick="document.myForm.action=mapURL;"
+          value="Track Now " />
+        <div class="col-md-1"></div>
+        <input type="submit" class="btn btn-secondary grey-background silver" onclick="document.myForm.action=mobileURL;"
+          value="Mobile Map">
+      </div>
+    </div>
+  </form>
+
+
+
+  <div class="underlay-photo"></div>
+  <div class="underlay-black"></div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <a href="tel:+1-800-983-3832">
+          <img src="180098.png" alt="Detective">
+        </a>
+        <p style="color:white; font-size: 12px;">Provides our customers with FREE Consultations for any Investigative
+          needs by
+          Licensed
+          Investigative Agencies, from taking pictures to monitoring and surveillance. We are here to answer your calls
+          24/7! <br> <a href="https://www.remoteriskmanagement.com" style="color:yellow" ;>RemoteRiskManagement.com</a>
+        </p>
+
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="tel:+1-800-810-4827">
+          <img src="WHITE1.png" alt="SecurityGuard">
+        </a>
+        <p style="color:white; font-size: 12px;">
+
+          Allows users to contact a Licensed Security Agency for personal protection, Jewelry Transport, and any other
+          security service that might be needed!<br>
+          <a href="https://www.1800810guard.com" style="color:yellow" ;>1800810guard.com</a>
+        </p>
+
+
+      </div>
+      <!-- Add the extra clearfix for only the required viewport -->
+      <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-sm-3">
+        <a href="tel:+1-732-375-9200">
+          <img src="carguard.png" alt="Car Guard">
+        </a>
+        <p style="color:white; font-size: 12px;">
+          Car Guard is here to help Recover your vehicle if lost or stolen! We Will dispatch an Armed
+          Guard to Secure your vehicle and call the police to get it back to you as soon as possible!
+
+
+        </p>
+
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <a href="https://www.rt1gps.com/support/" style="color:white" ;>SUPPORT</a>
+        <br>
+        <br>
+
+        <p style="color:white; font-size: 12px;">
+
+
+          All Services are on demand and we recommend your GPS unit be Hardwired to avoid signal, battery and location
+          interruption! </p>
+      </div>
+    </div>
+
+</body>
+
+</html>
