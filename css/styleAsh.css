@@ -31,7 +31,9 @@ font-family: 'Black Ops One', cursive;
 
 .silver:hover {background-color: #ffe100;
 }
-
+.fa-arrow-circle-o-right {
+  color: white;
+}
 
 input ::-webkit-input-placeholder {
 color: rgba(255, 255, 255, 0.7);
