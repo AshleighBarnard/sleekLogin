@@ -1,4 +1,3 @@
-Link to code
-https://codepen.io/boltaway/pen/afpow.
 
- Simple login form design. There's not much to it, really.
+
+ Simple login form design for rt1gps/remoteriskmanagement. There's not much to it, really.
