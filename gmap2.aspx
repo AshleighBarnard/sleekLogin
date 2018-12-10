@@ -1,5 +1,7 @@
 <%@ Page Language="vb" AutoEventWireup="false" CodeBehind="gmap.aspx.vb" Inherits="findme2.gmap2" %>
-<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI" 
+
+TagPrefix="asp" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -33,6 +35,7 @@
       FONT-SIZE: 11px;
       BORDER-LEFT: black 1px solid;
       BORDER-BOTTOM: black 1px solid;
+
       BACKGROUND-COLOR: #90d7f5;
       bold: ;
       font-color: black
@@ -76,7 +79,9 @@
       FONT-SIZE: 11px;
       BORDER-LEFT: black 1px solid;
       WIDTH: 50%;
-      BORDER-BOTTOM: black 1px solid
+      BORDER-BOTTOM:
+
+        black 1px solid
     }
 
     .dataTableCellLeftNoBold {
@@ -85,7 +90,7 @@
       FONT-SIZE: 11px;
       BORDER-LEFT: black 1px solid;
       WIDTH: 50%;
-      BORDER-BOTTOM: black 1px solid
+      BORDER- BOTTOM: black 1px solid
     }
 
     .dataTableCellRight {
@@ -196,7 +201,9 @@
       left: 0px;
       font-size: 14px;
       letter-spacing: -1px;
-      font-family: verdana, helvetica, arial, sans-serif;
+      font-family:
+
+        verdana, helvetica, arial, sans-serif;
       color: #fff;
       padding: 10px 10px 10px 10px;
       font-weight: 500;
@@ -206,14 +213,16 @@
       -moz-border-radius-topleft: 20px;
       -webkit-border-top-left-radius: 20px;
       -moz-border-radius-bottomleft: 20px;
-      -webkit-border-bottom-left-radius: 20px;
+      -webkit-border-bottom-left-radius:
+
+        20px;
       -moz-border-radius-bottomright: 0px;
       -webkit-border-bottom-right-radius: 0px;
       filter: alpha(opacity=85);
       opacity: .85;
       display: block;
       min-width: 10px;
-      text-align: left;
+      text- align: left;
     }
 
     .tabcontenton,
@@ -250,7 +259,7 @@
         tabHandle: '.handle1',                              //class of the element that will be your tab
         pathToTabImage: 'images/btnCal.png',          //path to the image for the tab (optionaly can be set using css)
         imageHeight: '167px',                               //height of tab image
-        imageWidth: '45px',                             //width of tab image    
+        imageWidth: '45px',                             //width of tab image   
         tabLocation: 'right',                               //side of screen where tab lives, top, right, bottom, or left
         speed: 555,                                        //speed of animation
         action: 'click',                                   //options: 'click' or 'hover', action to trigger animation
@@ -297,7 +306,7 @@
         tabHandle: '.handle3',                              //class of the element that will be your tab
         pathToTabImage: 'images/btnRep.png',          //path to the image for the tab (optionaly can be set using css)
         imageHeight: '165px',                               //height of tab image
-        imageWidth: '45px',                             //width of tab image    
+        imageWidth: '45px',                             //width of tab image   
         tabLocation: 'right',                               //side of screen where tab lives, top, right, bottom, or left
         speed: 555,                                        //speed of animation
         action: 'click',                                   //options: 'click' or 'hover', action to trigger animation
@@ -311,7 +320,7 @@
         tabHandle: '.handle4',                              //class of the element that will be your tab
         pathToTabImage: 'images/btnser.png',          //path to the image for the tab (optionaly can be set using css)
         imageHeight: '167px',                               //height of tab image
-        imageWidth: '45px',                             //width of tab image    
+        imageWidth: '45px',                             //width of tab image   
         tabLocation: 'right',                               //side of screen where tab lives, top, right, bottom, or left
         speed: 555,                                        //speed of animation
         action: 'click',                                   //options: 'click' or 'hover', action to trigger animation
@@ -327,7 +336,9 @@
     <form id="Form1" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px"
       method="post" runat="server">
       <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-      <TABLE id="Table5" style="BORDER-RIGHT: #8cd4fd 4px groove; BORDER-TOP: #8cd4fd 4px groove; BORDER-LEFT: #8cd4fd 4px groove; BORDER-BOTTOM: #8cd4fd 4px groove"
+      <TABLE id="Table5" style="BORDER-RIGHT: #8cd4fd 4px groove; BORDER-TOP: #8cd4fd 4px groove; BORDER-LEFT: #8cd4fd 4px groove; BORDER-BOTTOM: #8cd4fd 4px 
+
+groove"
         borderColor="#000000" cellSpacing="0" cellPadding="0" rules="none" bgColor="white" border="1" frame="border">
         <tr style="height:76px; width:100%" id="headertr">
           <td align="left" valign="top" class="style8">
@@ -380,6 +391,7 @@
 
                           <div>
                             <asp:Label ID="lblBatteryLevel" runat="server" CssClass="transparency" Width="75px">Battery
+
                               Level:</asp:Label>
                             <asp:Image ID="BatteryImage" runat="server" />
                           </div>
@@ -406,10 +418,13 @@
                           <tr>
                             <td align="left">
                               <asp:label id="Label13" runat="server" Visible="False" BackColor="transparent" CssClass="transparency">SELECT
+
                                 USER:</asp:label>
                             </td>
                             <td align="left" style="width:140px">
                               <asp:DropDownList ID="DropDownList2" runat="server" Visible="False" Width="140px"></asp:DropDownList>
+
+
                             </td>
                             <td align="left" style="width:30px">
                               <asp:Label ID="Label0" runat="server" Width="30px" Visible="False" BackColor="Transparent"
@@ -417,11 +432,15 @@
                             </td>
                             <td align="left" style="width:60px;">
                               <asp:TextBox ID="TextBoxGpw" runat="server" Visible="False" TextMode="Password" Text="*****"
-                                Width="60px" CausesValidation="True" ToolTip='If needed, enter the group password here, then click the "GET" button to the left.'></asp:TextBox>
+                                Width="60px" CausesValidation="True" ToolTip='If needed, enter 
+
+the group password here, then click the "GET" button to the left.'></asp:TextBox>
                             </td>
                             <td align="left" style="width:40px; padding-left:1px">
                               <asp:button id="ButtonGrpPw" runat="server" Visible="False" Width="40px" Text="Get"
-                                ToolTip="Select another user or group, enter a password if needed, then click this button."></asp:button>
+                                ToolTip="Select another user 
+
+or group, enter a password if needed, then click this button."></asp:button>
                             </td>
                           </tr>
                         </table>
@@ -453,8 +472,12 @@
                     type="text" runat="server">
                   <input id="gPwd" runat="server" style="visibility: hidden; width: 16px; height: 16px" type="text" />
                   <input id="lastBattVal" runat="server" style="visibility: hidden; width: 16px; height: 16px;" type="text" />
+
+
                   <input id="deletedFences" runat="server" style="visibility: hidden; width: 16px; height: 16px;" type="text" />
-                  <%--</td>
+                  <%--
+
+</td>
 <TD id="logoImg" vAlign="top" align="center" style="visibility: hidden;width: 200px;">--%>
                   <div style="display:none">
                     <TABLE cellSpacing="0" cellPadding="3" border="0" style="color:white;width: 100%;">
@@ -511,7 +534,9 @@
                     <table style="color:white;border-collapse:collapse; table-layout: fixed;">
                       <tr>
                         <td>
-                          <%--<asp:checkbox id="CheckBox1" runat="server" Text="BreadCrumbs" ToolTip="View all position reports." AutoPostBack="True" style="font-weight: bold; font-size: 14px; color: blue"></asp:checkbox>--%>
+                          <%--<asp:checkbox id="CheckBox1" runat="server" Text="BreadCrumbs" ToolTip="View all position reports." AutoPostBack="True" style="font-weight: 
+
+bold; font-size: 14px; color: blue"></asp:checkbox>--%>
                         </td>
                       </tr>
                       <tr>
@@ -530,7 +555,9 @@ SelectionMode="None" ShowGridLines="True">
                                                         <TodayDayStyle BorderColor="Magenta" BorderStyle="Solid" BorderWidth="3px" /></asp:calendar>--%>
                           <div style="text-align:left;">
                             <%--<asp:Button ID="ButtonGrpPw" runat="server" Text="Group Password" Visible="False"/>&nbsp;--%>
-                            <%--<asp:TextBox ID="TextBoxGpw" runat="server" MaxLength="12" Visible="False" style="width: 40px;">0000</asp:TextBox>--%><br />
+                            <%--<asp:TextBox ID="TextBoxGpw" runat="server" MaxLength="12" Visible="False" style="width: 
+
+40px;">0000</asp:TextBox>--%><br />
                             <%--<asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" Font-Names="Courier New"
                                                         Visible="False"></asp:DropDownList>--%>
                           </div>
@@ -539,20 +566,27 @@ SelectionMode="None" ShowGridLines="True">
                             <hr size="5" color="maroon" />
                           </div>
                           <div style="text-align:left;">
-                            <%--<asp:textbox id="fenceBox" style="TEXT-ALIGN: center; WIDTH: 173px;" runat="server" Visible="False"	ToolTip='Enter an email address or a cellphone number with a "+" prefix.' MaxLength="66">myemail@address.com</asp:textbox><br />
-                       <asp:TextBox ID="fencePWbox" runat="server" style="TEXT-ALIGN: center; width: 66px;" Visible="False" ToolTip="You will need the account's password to create fences.">password</asp:TextBox>&nbsp;
+                            <%--<asp:textbox id="fenceBox" style="TEXT-ALIGN: center; WIDTH: 173px;" runat="server" Visible="False"	
+
+ToolTip='Enter an email address or a cellphone number with a "+" prefix.' MaxLength="66">myemail@address.com</asp:textbox><br />
+                       <asp:TextBox ID="fencePWbox" runat="server" style="TEXT-ALIGN: center; width: 66px;" Visible="False" ToolTip="You will need the 
+
+account's password to create fences.">password</asp:TextBox>&nbsp;
                        <asp:DropDownList ID="fenceTypeList" runat="server" Visible="False">
                                             <asp:ListItem>Enter</asp:ListItem>
                                             <asp:ListItem>Exit</asp:ListItem>
                                             <asp:ListItem>Both</asp:ListItem>
                                             <asp:ListItem Selected="True">1Shot</asp:ListItem>
                                            </asp:DropDownList>
-                       <asp:button id="Button2" runat="server" Text="geoFence" ToolTip="An alert will be sent if target enters (or leaves) this area. To cancel, click today's date on the calendar."></asp:button>
+                       <asp:button id="Button2" runat="server" Text="geoFence" ToolTip="An alert will be sent if target enters (or leaves) this area. To 
+
+cancel, click today's date on the calendar."></asp:button>
                        <INPUT id="Button5" style="VISIBILITY: hidden" type="button" value="Poll" runat="server">--%>
                           </div>
                           <hr size="5" color="maroon" />
 
                           <!--A href="veMap.aspx?name=<% =localName %>&gpasswd=<% =grpPassword %>" ><IMG id="Img2" height="30" alt="" src="veLogo.gif" runat="server"></A-->
+
                           &nbsp;&nbsp;
                           <A href="mQuest.aspx?name=<% =localName %>&gpasswd=<% =grpPassword %>"><IMG id="Img4" height="30"
                               src="MQlogo.gif" runat="server"></A>
@@ -560,18 +594,29 @@ SelectionMode="None" ShowGridLines="True">
 
                           <div style="text-align:left">
                             <img src="download.gif">
-                            <%--<span style="vertical-align:top"><asp:hyperlink id="HyperLink2" runat="server" Enabled="False" style = "font-size: 15px; color: black;"> Download</asp:hyperlink></span>--%><br>
+                            <%--<span style="vertical-align:top"><asp:hyperlink id="HyperLink2" runat="server" Enabled="False" style = "font-size: 15px; color: black;"> 
+
+Download</asp:hyperlink></span>--%><br>
                             <img src="dReport.gif">
-                            <%--<span style="vertical-align:top"><asp:hyperlink id="HyperLink1" runat="server" Target="_blank" style = "font-size: 15px; color: black;">Drive Report</asp:hyperlink></span>--%><br>
+                            <%--<span style="vertical-align:top"><asp:hyperlink id="HyperLink1" runat="server" Target="_blank" style = "font-size: 15px; color: black;">Drive 
+
+Report</asp:hyperlink></span>--%><br>
                             <img src="alerts.gif">
-                            <%--<span style="vertical-align:top"><asp:HyperLink ID="HyperLink4" runat="server" Target="_blank" style = "font-size: 15px; color: black;">Events</asp:HyperLink></span>--%><br>
+                            <%--<span style="vertical-align:top"><asp:HyperLink ID="HyperLink4" runat="server" Target="_blank" style = "font-size: 15px; color: 
+
+black;">Events</asp:HyperLink></span>--%><br>
                             <img src="statsReport.gif">
-                            <%--<span style="vertical-align:top"><asp:HyperLink ID="HyperLinkStats" runat="server" Target="_blank" style = "font-size: 15px; color: black;">Stats</asp:HyperLink></span>--%><br>
+                            <%--<span style="vertical-align:top"><asp:HyperLink ID="HyperLinkStats" runat="server" Target="_blank" style = "font-size: 15px; color: 
+
+black;">Stats</asp:HyperLink></span>--%><br>
                             <img src="GEicon.gif">
-                            <%--<span style="vertical-align:top"><asp:hyperlink id="HyperLink3" runat="server" Target="_blank" style = "font-size: 15px; color: black;">View with Google Earth</asp:hyperlink></span>--%><br>
+                            <%--<span style="vertical-align:top"><asp:hyperlink id="HyperLink3" runat="server" Target="_blank" style = "font-size: 15px; color: black;">View with 
+
+Google Earth</asp:hyperlink></span>--%><br>
                             <img id="geIcon" src="GEicon.gif">
                             <span style="vertical-align:top">
                               <asp:HyperLink ID="HyperLinkGErt" runat="server" Target="_blank" style="font-size: 15px; color: black;">GE
+
                                 RealTime</asp:HyperLink>
                             </span>
                           </div>
@@ -604,13 +649,17 @@ SelectionMode="None" ShowGridLines="True">
                 </tr>
                 <tr>
                   <td width="10%" align="center" style="padding:0 1px 0 0;">
-                    <asp:checkbox id="CheckBox1" runat="server" ToolTip="View all position reports." Text="BreadCrumbs"
+                    <asp:checkbox id="CheckBox1" runat="server" ToolTip="View all position 
+
+reports." Text="BreadCrumbs"
                       AutoPostBack="True"></asp:checkbox>
                   </td>
                 </tr>
                 <tr>
                   <td width="10%" align="center" style="padding:0 29px 0 0;">
-                    <%--<input id="reFresh" type="checkbox" CHECKED runat="server"/>Refresh--%>
+                    <%--<input id="reFresh" type="checkbox" CHECKED runat="server"/>Refresh--
+
+%>
                   </td>
                 </tr>
               </table>
@@ -623,7 +672,45 @@ SelectionMode="None" ShowGridLines="True">
           </tr>
           <tr>
             <td style="width:110px;padding-top:3px;padding-left:33px" align="left">
+              <div>
+                <%-- <asp:ImageButton ID="imgbuttonHelp" runat="server" ImageUrl="images/helpicon.gif"/>        --%>
+                <asp:Panel runat="server" ID="outerpopuppanel" Height="120px" Width="320px" CssClass="modalPopupouter"
+                  style="display:none;">
+                  <asp:Panel runat="server" ID="innerpopuppanel" Height="140px" CssClass="modalPopupinner">
+                    <table width="320px" style="color:white;background-color: #1A3961; height: 90px;">
+                      <tr style="width:300px">
+                        <td style="height:5px;width:300px">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="height:25px">
+                          <asp:HyperLink ID="hlFAQ" runat="server" Font-Bold="true" CssClass="helphyperlinkcss">Frequently
+                            Asked Questions
 
+                          </asp:HyperLink>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="height:25px">
+                          <asp:Label ID="lblphone" runat="server" Text=" Phone Support : 650-692-8100" CssClass="helplabelcss"></asp:Label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="height:25px;">
+                          <asp:Label ID="lblsupport" runat="server" Text="Email Support : support@trackingtheworld.com"
+                            Font-Bold="true" CssClass="helplabelcss"></asp:Label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="height:38px;vertical-align:middle">
+                          <asp:Button ID="btnOk" runat="server" Text="Ok" Width="55px" Font-Bold="true" ForeColor="MidnightBlue"
+                            BackColor="Gainsboro" />
+                        </td>
+                      </tr>
+                    </table>
+                  </asp:Panel>
+                </asp:Panel>
+              </div>
               <cc1:ModalPopupExtender ID="mpoupextender" runat="server" TargetControlID="imgbuttonHelp" PopupControlID="outerpopuppanel"
                 DropShadow="false" BackgroundCssClass="GrayedOut" OkControlID="btnOk"></cc1:ModalPopupExtender>
               <cc1:RoundedCornersExtender ID="RoundedCornersExtender1" runat="server" TargetControlID="innerpopuppanel"
@@ -638,7 +725,9 @@ SelectionMode="None" ShowGridLines="True">
         </div>
       </div>
 
-      <div class="slide-out-div1"><a href="#" class="handle1" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-decoration:none;"
+      <div class="slide-out-div1"><a href="#" class="handle1" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-
+
+decoration:none;"
           title="Click to view Tracking history"><br /><br /><br /><br /><br /><br />
           <</a> <div class="calendar">
             <table id="tblCalendar" width="130px" cellspacing="0" cellpadding="0" border="1" rules="all" style="color:white;height:50px;">
@@ -661,7 +750,9 @@ SelectionMode="None" ShowGridLines="True">
 
       </div>
 
-      <div class="slide-out-div2" runat="server"> <a href="#" class="handle2" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-decoration:none;"
+      <div class="slide-out-div2" runat="server"> <a href="#" class="handle2" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; 
+
+text-decoration:none;"
           title="Click to Enable Geo-Fence"><br /><br /><br /><br /><br /><br />
           <</a> <table id="geoFence" cellspacing="0" cellpadding="0" width="90%" style="color:white;background-color:Transparent; border-style:none; height: 123px;">
             <tr>
@@ -707,20 +798,30 @@ SelectionMode="None" ShowGridLines="True">
             </tr>
             <tr>
               <td align="left" valign="middle" class="style7">
-                <asp:textbox id="TextBox2" runat="server" CssClass="addressTextbox" ToolTip='Enter address as street,city,state. Or just enter a "place" name like  "lake geneva".'
-                  MaxLength="160" Width="110px" Height="17px" Text="Find Address" onfocus="this.value =' '; " onblur="if(this.value == ' ') this.value='Find Address';"></asp:textbox>
+                <asp:textbox id="TextBox2" runat="server" CssClass="addressTextbox" ToolTip='Enter address as street,city,state. Or just enter a "place" name like  
+
+"lake geneva".'
+                  MaxLength="160" Width="110px" Height="17px" Text="Find Address" onfocus="this.value =' '; " onblur="if(this.value == ' ') this.value='Find 
+
+Address';"></asp:textbox>
                 &nbsp;
               </td>
               <td align="left" valign="top">
                 <input id="GeoButton" type="button" Width="45px" CssClass="btnGo" BorderStyle="None" BackColor="Transparent"
-                  value="Find" ToolTip="Enter address, place, or coords (lat,lon)." Height="22px" onclick="javascript:codeAddress();" />
+                  value="Find" ToolTip="Enter address, place, or 
+
+coords (lat,lon)." Height="22px" onclick="javascript:codeAddress();" />
               </td>
             </tr>
             </table>
       </div>
-      <div class="slide-out-div3"> <a href="#" class="handle3" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-decoration:none;"
+      <div class="slide-out-div3"> <a href="#" class="handle3" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-
+
+decoration:none;"
           title="Click to View Reports"><br /><br /><br /><br /><br /><br />
-          <</a> <table id="Reports" title="Reports" cellspacing="0" width="80%" style="color:white;background-color:Transparent; border-style:none; margin-left: 15px; margin-top:20px">
+          <</a> <table id="Reports" title="Reports" cellspacing="0" width="80%" style="color:white;background-color:Transparent; border-style:none; margin-left: 15px; 
+
+margin-top:20px">
             <tr>
               <td align="left" colspan="2">
                 <asp:hyperlink id="HyperLink2" runat="server" Width="143px" ToolTip="Retrieve the data in .csv format."
@@ -730,7 +831,9 @@ SelectionMode="None" ShowGridLines="True">
             <tr>
               <td align="left" colspan="2">
                 <asp:hyperlink id="HyperLink3" runat="server" Width="143px" ImageUrl="images/btnGoogle.png" Target="_blank">View
-                  with Google Earth</asp:hyperlink>
+                  with
+
+                  Google Earth</asp:hyperlink>
               </td>
             </tr>
             <tr>
@@ -754,31 +857,43 @@ SelectionMode="None" ShowGridLines="True">
                 <INPUT id="Button5" style="VISIBILITY: hidden; WIDTH: 2px; HEIGHT: 24px" type="button" value="Poll"
                   name="Button5" runat="server" src="/images/btn_polls.png">
                 <%--<input name="Button5" type="button"  id="Button5" runat="server" class="btnpolls"  
-        onclick="popUpWindow(&quot;sendSMS.aspx?name=0377994&quot;,&quot;XX&quot;,&quot;240&quot;,&quot;240&quot;,&quot;100&quot;,&quot;100&quot;,&quot;YY&quot;,&quot;no&quot;)" />--%>
+        onclick="popUpWindow(&quot;sendSMS.aspx?
+
+name=0377994&quot;,&quot;XX&quot;,&quot;240&quot;,&quot;240&quot;,&quot;100&quot;,&quot;100&quot;,&quot;YY&quot;,&quot;no&quot;)" />--%>
               </td>
             </tr>
             </table>
       </div>
-      <div class="slide-out-div4"> <a href="#" class="handle4" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-decoration:none;"
+      <div class="slide-out-div4"> <a href="#" class="handle4" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-
+
+decoration:none;"
           title="Click to View Services"><br /><br /><br /><br /><br /><br />
-          <</a> <table id="Services" title="Services" cellspacing="0" width="115px" style="color:white;background-color:Transparent; border-style:none; margin-left: 15px; margin-top:15px">
+          <</a> <table id="Services" title="Services" cellspacing="0" width="115px" style="color:white;background-color:Transparent; border-style:none; margin-left: 15px; 
+
+margin-top:15px">
             <tr>
               <td align="left" valign="top" colspan=2>
                 <input id="CallButton1" type="image" height="73%" CssClass="btnGo" BorderStyle="None" BackColor="Transparent"
-                  src="images/1800x95.png" ToolTip="Click to Call +1-800-810-GUARD" onclick='window.open("tel:+1-800-810-GUARD");return(false);' />
+                  src="images/1800x95.png" ToolTip="Click to 
+
+Call +1-800-810-GUARD" onclick='window.open("tel:+1-800-810-GUARD");return(false);' />
               </td>
             </tr>
             <tr>
               <td align="left" valign="middle" colspan=2>
                 <input id="CallButton2" type="image" height="73%" CssClass="btnGo" BorderStyle="None" BackColor="Transparent"
-                  src="images/carguardx85.png" value="Private Investigator" ToolTip="Click to Call +1-800-98-DETECTIVE"
+                  src="images/carguardx85.png" value="Private 
+
+Investigator" ToolTip="Click to Call +1-800-98-DETECTIVE"
                   onclick='window.open("tel:+1-800-98-DETECTIVE");return(false);' />
               </td>
             </tr>
             <tr>
               <td align="left" valign="bottom" colspan=2>
                 <input id="CallButton3" type="image" height="73%" CssClass="btnGo" BorderStyle="None" BackColor="Transparent"
-                  src="images/carguardx85911.png" value="Car Guard" ToolTip="Click to Call +1-732-375-9200" onclick='window.open("tel:+1-732-375-9200");return(false);' />
+                  src="images/carguardx85911.png" value="Car 
+
+Guard" ToolTip="Click to Call +1-732-375-9200" onclick='window.open("tel:+1-732-375-9200");return(false);' />
               </td>
             </tr>
             </table>
@@ -812,7 +927,7 @@ SelectionMode="None" ShowGridLines="True">
                   border-width: 1px;
                   overflow: hidden;
                   word-break: normal;
-                  border-color: black;
+                  border- color: black;
                 }
 
                 .tg th {
@@ -823,7 +938,7 @@ SelectionMode="None" ShowGridLines="True">
                   border-style: solid;
                   border-width: 1px;
                   overflow: hidden;
-                  word-break: normal;
+                  word- break: normal;
                   border-color: black;
                 }
 
@@ -898,7 +1013,9 @@ SelectionMode="None" ShowGridLines="True">
                 </span>
                 <input type="text" name="editCnData" id="editCnData" value="automobile" style="display:none">
                 <input type="submit" name="editCnButton" value="Set" id="editCnButton" style="height:26px;width:103px;"
-                  onclick="javascript:sendCnData('inline1');return false;">
+                  onclick="javascript:sendCnData
+
+('inline1');return false;">
             </form>
   </center>
   <script type="text/javascript">
@@ -909,8 +1026,10 @@ SelectionMode="None" ShowGridLines="True">
         alert('� Right-Click 2 pushpins for trip info. \n� Left-Click a pushpin to see the address.');
       }
       if (buttontext == "Set") {
-        alert('� Double-click 2 points to draw the fence.  \n� Enter an email (or phone with \'+ \' prefix),  password.\n� Select the fence type, then click SET.\n� Click todays date on calendar to cancel.');
-      }
+        alert('� Double-click 2 points to draw the fence.  \n� Enter an email (or phone with \'+ \' prefix),  password.\n� Select the fence type, then 
+
+click SET.\n� Click todays date on calendar to cancel.');
+        }
     }
     getBatteryImage();
     var rgeoURL = "<% =serverURL %>";
@@ -1102,7 +1221,11 @@ SelectionMode="None" ShowGridLines="True">
     ID = window.setTimeout("startTime();", document.getElementById("TextBox1").value * 1000)
     function startTime() {
       if (document.getElementById("reFresh").checked == true) {
-        var myURL = "http://" + window.location.host + window.location.pathname + "?name=" + document.getElementById("Label1").innerHTML + "&Gzoom=" + document.getElementById("myZoom").value + "&gpasswd=" + document.getElementById("gPwd").value + "&mStyle=" + document.getElementById("mStyle").value + "&PPON=" + document.getElementById("CheckBox1").checked
+        var myURL = "http://" + window.location.host + window.location.pathname + "?name=" + document.getElementById("Label1").innerHTML + "&Gzoom=" +
+
+          document.getElementById("myZoom").value + "&gpasswd=" + document.getElementById("gPwd").value + "&mStyle=" + document.getElementById("mStyle").value +
+
+          "&PPON=" + document.getElementById("CheckBox1").checked
         window.location.href = myURL
       }
       ID = setTimeout("startTime();", document.getElementById("TextBox1").value * 1000)
