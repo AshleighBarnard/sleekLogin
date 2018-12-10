@@ -9,7 +9,7 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <meta content="noindex,nofollow" name="robots">
   <!--META http-equiv="Pragma" content="no-cache">
-	<META http-equiv="Expires" content="Tue, 01 Jan 1980 12:12:02 GMT"-->
+<META http-equiv="Expires" content="Tue, 01 Jan 1980 12:12:02 GMT"-->
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<% =gKey%>&libraries=drawing"></script>
 
   <script type="text/javascript" src="js/jquery-latest.min.js"></script>
@@ -455,7 +455,7 @@
                   <input id="lastBattVal" runat="server" style="visibility: hidden; width: 16px; height: 16px;" type="text" />
                   <input id="deletedFences" runat="server" style="visibility: hidden; width: 16px; height: 16px;" type="text" />
                   <%--</td>
-									<TD id="logoImg" vAlign="top" align="center" style="visibility: hidden;width: 200px;">--%>
+<TD id="logoImg" vAlign="top" align="center" style="visibility: hidden;width: 200px;">--%>
                   <div style="display:none">
                     <TABLE cellSpacing="0" cellPadding="3" border="0" style="color:white;width: 100%;">
                       <tr>
@@ -511,7 +511,7 @@
                     <table style="color:white;border-collapse:collapse; table-layout: fixed;">
                       <tr>
                         <td>
-                          <%--<asp:checkbox id="CheckBox1" runat="server" Text="BreadCrumbs" ToolTip="View all position reports."	 AutoPostBack="True" style="font-weight: bold; font-size: 14px; color: blue"></asp:checkbox>--%>
+                          <%--<asp:checkbox id="CheckBox1" runat="server" Text="BreadCrumbs" ToolTip="View all position reports." AutoPostBack="True" style="font-weight: bold; font-size: 14px; color: blue"></asp:checkbox>--%>
                         </td>
                       </tr>
                       <tr>
@@ -523,10 +523,10 @@
                       <tr>
                         <td>
                           <%--<asp:calendar id="Calendar1" runat="server" Width="200px" ForeColor="Black"
-														SelectionMode="None" ShowGridLines="True">
-														<DayStyle BackColor="White"></DayStyle>
-														<DayHeaderStyle BackColor="#F0EC70"></DayHeaderStyle>
-														<TitleStyle ForeColor="Black" BackColor="#90D7F5"></TitleStyle>
+SelectionMode="None" ShowGridLines="True">
+<DayStyle BackColor="White"></DayStyle>
+<DayHeaderStyle BackColor="#F0EC70"></DayHeaderStyle>
+<TitleStyle ForeColor="Black" BackColor="#90D7F5"></TitleStyle>
                                                         <TodayDayStyle BorderColor="Magenta" BorderStyle="Solid" BorderWidth="3px" /></asp:calendar>--%>
                           <div style="text-align:left;">
                             <%--<asp:Button ID="ButtonGrpPw" runat="server" Text="Group Password" Visible="False"/>&nbsp;--%>
@@ -540,17 +540,16 @@
                           </div>
                           <div style="text-align:left;">
                             <%--<asp:textbox id="fenceBox" style="TEXT-ALIGN: center; WIDTH: 173px;" runat="server" Visible="False"	ToolTip='Enter an email address or a cellphone number with a "+" prefix.' MaxLength="66">myemail@address.com</asp:textbox><br />
-						                        <asp:TextBox ID="fencePWbox" runat="server" style="TEXT-ALIGN: center; width: 66px;" Visible="False" ToolTip="You will need the account's password to create fences.">password</asp:TextBox>&nbsp;
-						                        <asp:DropDownList ID="fenceTypeList" runat="server" Visible="False">
-                                            		<asp:ListItem>Enter</asp:ListItem>
-                                            		<asp:ListItem>Exit</asp:ListItem>
-                                            		<asp:ListItem>Both</asp:ListItem>
-                                            		<asp:ListItem Selected="True">1Shot</asp:ListItem>
-                                        	    </asp:DropDownList>
-						                        <asp:button id="Button2" runat="server" Text="geoFence" ToolTip="An alert will be sent if target enters (or leaves) this area. To cancel, click today's date on the calendar."></asp:button>
-						                        <INPUT id="Button5" style="VISIBILITY: hidden" type="button" value="Poll" runat="server">--%>
+                       <asp:TextBox ID="fencePWbox" runat="server" style="TEXT-ALIGN: center; width: 66px;" Visible="False" ToolTip="You will need the account's password to create fences.">password</asp:TextBox>&nbsp;
+                       <asp:DropDownList ID="fenceTypeList" runat="server" Visible="False">
+                                            <asp:ListItem>Enter</asp:ListItem>
+                                            <asp:ListItem>Exit</asp:ListItem>
+                                            <asp:ListItem>Both</asp:ListItem>
+                                            <asp:ListItem Selected="True">1Shot</asp:ListItem>
+                                           </asp:DropDownList>
+                       <asp:button id="Button2" runat="server" Text="geoFence" ToolTip="An alert will be sent if target enters (or leaves) this area. To cancel, click today's date on the calendar."></asp:button>
+                       <INPUT id="Button5" style="VISIBILITY: hidden" type="button" value="Poll" runat="server">--%>
                           </div>
-
                           <hr size="5" color="maroon" />
 
                           <!--A href="veMap.aspx?name=<% =localName %>&gpasswd=<% =grpPassword %>" ><IMG id="Img2" height="30" alt="" src="veLogo.gif" runat="server"></A-->
@@ -622,28 +621,42 @@
               <div id="speedo" class="speedo"></div>
             </td>
           </tr>
+          <tr>
+            <td style="width:110px;padding-top:3px;padding-left:33px" align="left">
 
+              <cc1:ModalPopupExtender ID="mpoupextender" runat="server" TargetControlID="imgbuttonHelp" PopupControlID="outerpopuppanel"
+                DropShadow="false" BackgroundCssClass="GrayedOut" OkControlID="btnOk"></cc1:ModalPopupExtender>
+              <cc1:RoundedCornersExtender ID="RoundedCornersExtender1" runat="server" TargetControlID="innerpopuppanel"
+                Radius="20">
+              </cc1:RoundedCornersExtender>
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <div id="helpdiv" style="margin-top:-195px;width:30px;margin-left:10px;">
+          <asp:ImageButton ID="imgbuttonHelp" runat="server" ImageUrl="images/helpicon.gif" />
+        </div>
+      </div>
 
-          <div class="slide-out-div1"><a href="#" class="handle1" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-decoration:none;"
-              title="Click to view Tracking history"><br /><br /><br /><br /><br /><br />
-              <</a> <div class="calendar">
-                <table id="tblCalendar" width="130px" cellspacing="0" cellpadding="0" border="1" rules="all" style="color:white;height:50px;">
-                  <tr style="width:100%">
-                    <td align="justify">
-                      <asp:calendar id="Calendar1" runat="server" CellPadding="0" Height="50px" ToolTip="View tracks from previous days here."
-                        SelectionMode="None" ShowGridLines="True" BorderColor="Black" TitleFormat="MonthYear">
-                        <NextPrevStyle BackColor="white" BorderColor="Black" ForeColor="Black" CssClass="monthstyle" />
-                        <DayStyle BackColor="White"></DayStyle>
-                        <DayHeaderStyle BackColor="#F0EC70"></DayHeaderStyle>
-                        <TitleStyle ForeColor="Black" BackColor="#90D7F5"></TitleStyle>
-                        <TodayDayStyle BorderColor="Magenta" BorderStyle="Solid" BorderWidth="3px" />
-                      </asp:calendar>
-                    </td>
-                  </tr>
+      <div class="slide-out-div1"><a href="#" class="handle1" style="font-size:small; font-weight:bolder; font-family:Verdana; color: #ADD8E6; text-decoration:none;"
+          title="Click to view Tracking history"><br /><br /><br /><br /><br /><br />
+          <</a> <div class="calendar">
+            <table id="tblCalendar" width="130px" cellspacing="0" cellpadding="0" border="1" rules="all" style="color:white;height:50px;">
+              <tr style="width:100%">
+                <td align="justify">
+                  <asp:calendar id="Calendar1" runat="server" CellPadding="0" Height="50px" ToolTip="View tracks from previous days here."
+                    SelectionMode="None" ShowGridLines="True" BorderColor="Black" TitleFormat="MonthYear">
+                    <NextPrevStyle BackColor="white" BorderColor="Black" ForeColor="Black" CssClass="monthstyle" />
+                    <DayStyle BackColor="White"></DayStyle>
+                    <DayHeaderStyle BackColor="#F0EC70"></DayHeaderStyle>
+                    <TitleStyle ForeColor="Black" BackColor="#90D7F5"></TitleStyle>
+                    <TodayDayStyle BorderColor="Magenta" BorderStyle="Solid" BorderWidth="3px" />
+                  </asp:calendar>
+                </td>
+              </tr>
+            </table>
 
-                </table>
-
-          </div>
+      </div>
 
 
       </div>
@@ -753,7 +766,6 @@
               <td align="left" valign="top" colspan=2>
                 <input id="CallButton1" type="image" height="73%" CssClass="btnGo" BorderStyle="None" BackColor="Transparent"
                   src="images/1800x95.png" ToolTip="Click to Call +1-800-810-GUARD" onclick='window.open("tel:+1-800-810-GUARD");return(false);' />
-
               </td>
             </tr>
             <tr>
@@ -761,14 +773,12 @@
                 <input id="CallButton2" type="image" height="73%" CssClass="btnGo" BorderStyle="None" BackColor="Transparent"
                   src="images/carguardx85.png" value="Private Investigator" ToolTip="Click to Call +1-800-98-DETECTIVE"
                   onclick='window.open("tel:+1-800-98-DETECTIVE");return(false);' />
-
               </td>
             </tr>
             <tr>
               <td align="left" valign="bottom" colspan=2>
                 <input id="CallButton3" type="image" height="73%" CssClass="btnGo" BorderStyle="None" BackColor="Transparent"
                   src="images/carguardx85911.png" value="Car Guard" ToolTip="Click to Call +1-732-375-9200" onclick='window.open("tel:+1-732-375-9200");return(false);' />
-
               </td>
             </tr>
             </table>
@@ -903,7 +913,6 @@
       }
     }
     getBatteryImage();
-
     var rgeoURL = "<% =serverURL %>";
 
     var viewportheight = document.body.clientHeight;
@@ -916,8 +925,7 @@
 
     var oMapdiv = new getObj('map');//this is the map div
     oMapdiv.style.width = viewportwidth - 25;
-    oMapdiv.style.height = viewportheight;// - 125;	
-
+    oMapdiv.style.height = viewportheight;// - 125;
     function popUpWindow(url, name, width, height, left, top, status, scrollbars) {
       if ((left == null) || (top == null) || (status == null) || (scrollbars == null)) {
         var left = 130
@@ -932,7 +940,6 @@
         + "hotkeys=0,screenx=0,screeny=0,left=" + left + ",top=" + top);
       var_popWindow.focus();
     }
-
     function getObj(name) {
       if (document.getElementById) {
         this.obj = document.getElementById(name);
@@ -960,14 +967,13 @@
     var d1 = new Date();
     var d2 = new Date();
     var Rm = 3961; // mean radius of the earth (miles) at 39 degrees from the equator
-    var Rk = 6373; // mean radius of the earth (km) at 39 degrees from the equator	
+    var Rk = 6373; // mean radius of the earth (km) at 39 degrees from the equator
 
     var fenceRect = null;//cuz we only have 1 at a time on the map
     var trafficLayer = new google.maps.TrafficLayer();
 
  
-	<% =stS %>
-
+<% =stS %>
       function popUpWindow(url, name, width, height, left, top, status, scrollbars) {
         if ((left == null) || (top == null) || (status == null) || (scrollbars == null)) {
           var left = 130
@@ -982,7 +988,6 @@
           + "hotkeys=0,screenx=0,screeny=0,left=" + left + ",top=" + top);
         var_popWindow.focus();
       }
-
     function getObj(name) {
       if (document.getElementById) {
         this.obj = document.getElementById(name);
@@ -996,20 +1001,19 @@
 
     //================================right click=================================
 
-
     function calcRC(myIndex) {
-      //alert(myIndex + ": " + gRCpnts[myIndex]);	
-      var temp = gRCpnts[myIndex].split("|");//HH:mm:ss|lat|lon	
+      //alert(myIndex + ": " + gRCpnts[myIndex]);
+      var temp = gRCpnts[myIndex].split("|");//HH:mm:ss|lat|lon
       if (got2 == "false") {
         index1 = parseFloat(myIndex);//Id and index
-        d1.setTime(temp[0]);//time			
+        d1.setTime(temp[0]);//time
         index2 = 999;
         got2 = "true";//flag so next click gets saved to second set of vars and processed.
       } else {//2nd click processed here
         index2 = parseFloat(myIndex);
         d2.setTime(temp[0]);
         got2 = "false";	//flag re-set
-        //get the time diff in min between index 1 and 2	
+        //get the time diff in min between index 1 and 2
         var totalMin = Math.abs((d1 - d2) / (1000 * 60));
         var minStr = ""
         if (totalMin < 1) {
@@ -1021,8 +1025,7 @@
         else {
           minStr = totalMin.toFixed(1) + " minutes"
         }
-
-        //get the distance from all the PP between (inclusive)	
+        //get the distance from all the PP between (inclusive)
         var x;
         var y;
         var DX = 0;
@@ -1033,7 +1036,6 @@
           x = index2;
           y = index1;
         }
-
         while (x < y) {
           var tmp = gRCpnts[x].split("|");
           var lat1 = tmp[1];
@@ -1061,7 +1063,6 @@
     }
 
 
-
     function findDistance(t1, n1, t2, n2) {
       // convert coordinates to radians
       lat1 = deg2rad(t1);
@@ -1076,7 +1077,7 @@
       //c  = 2 * Math.atan(Math.sqrt(a),Math.sqrt(1-a)); // great circle distance in radians
       c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)); // great circle distance in radians
       dm = c * Rm; // great circle distance in miles
-      dk = c * Rk; // great circle distance in km		
+      dk = c * Rk; // great circle distance in km
       // round the results down to the nearest 1/1000
       mi = round(dm);
       km = round(dk);
@@ -1093,7 +1094,7 @@
       r = Math.round(x * 1000) / 1000;
       return r;
     }
-    //==================end rightClick===========================================	
+    //==================end rightClick===========================================
 
     window.onload = InitializeMap;
     drawSpeedo();
