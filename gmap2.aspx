@@ -684,21 +684,17 @@ reports." Text="BreadCrumbs"
                       </tr>
                       <tr>
                         <td align="center" style="height:25px">
-                          <asp:HyperLink ID="hlFAQ" runat="server" Font-Bold="true" CssClass="helphyperlinkcss">Frequently
-                            Asked Questions
-
-                          </asp:HyperLink>
                         </td>
                       </tr>
                       <tr>
                         <td align="center" style="height:25px">
-                          <asp:Label ID="lblphone" runat="server" Text=" Phone Support : 650-692-8100" CssClass="helplabelcss"></asp:Label>
+                          <asp:Label ID="lblphone" runat="server" Text=" Phone Support : 732-375-9200" CssClass="helplabelcss"></asp:Label>
                         </td>
                       </tr>
                       <tr>
                         <td align="center" style="height:25px;">
-                          <asp:Label ID="lblsupport" runat="server" Text="Email Support : support@trackingtheworld.com"
-                            Font-Bold="true" CssClass="helplabelcss"></asp:Label>
+                          <asp:Label ID="lblsupport" runat="server" Text="Email Support : support@rt1gps.com" Font-Bold="true"
+                            CssClass="helplabelcss"></asp:Label>
                         </td>
                       </tr>
                       <tr>
