@@ -123,7 +123,7 @@ top: 0;
 .underlay-photo {
 -webkit-animation: hue-rotate 6s infinite;
 animation: hue-rotate 6s infinite;
-background: url("/Users/ashleighbarnard/Desktop/sleek-login-form/globe.jpg");
+background: url("/css/globe.jpg");
 background-size: cover;
 -webkit-filter: grayscale(30%);
 z-index: -1;
