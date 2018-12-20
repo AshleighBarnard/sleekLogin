@@ -1019,13 +1019,11 @@ Guard" ToolTip="Click to Call +1-732-375-9200" onclick='window.open("tel:+1-732-
 
       var buttontext = document.getElementById('<%= Button2.ClientID %>').value;
       if (buttontext == "GeoFence") {
-        alert('Select Geofence Tab. \n Enter address, click find. \n Select the drawing tool, drag the box over the desired area. \n Enter an email address or phone number with the +1 Area Code Prefix, then enter the password 0000. \n Select the fence type, then click SET!');
+        alert('Select Geofence Tab. \\n Enter address, click find. \\n Select the drawing tool, drag the box over the desired area. \\n Enter an email address or phone number with the +1 Area Code Prefix, then enter the password 0000. \\n Select the fence type, then click SET!');
       }
       if (buttontext == "Set") {
-        alert('� Double-click 2 points to draw the fence.  \n� Enter an email (or phone with \'+ \' prefix),  password.\n� Select the fence type, then 
-
-click SET.\n� Click todays date on calendar to cancel.');
-        }
+        alert('Double-click 2 points to draw the fence.  \\n Enter an email (or phone with \'+ \' prefix),  password.\\n Select the fence type, then click SET.\\n Click todays date on calendar to cancel.');
+      }
     }
     getBatteryImage();
     var rgeoURL = "<% =serverURL %>";
