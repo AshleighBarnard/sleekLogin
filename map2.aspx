@@ -936,10 +936,10 @@ SelectionMode="None" ShowGridLines="True">
 
       var buttontext = document.getElementById('<%= Button2.ClientID %>').value;
       if (buttontext == "GeoFence") {
-        alert(' Select Geofence Tab. \n Enter address, click find. \n Select the drawing tool, drag the box over the desired area. \n Enter an email address or phone with the \'+\' 1 Prefix, enter the password. \n Select the fence type, then click SET. ');
+        alert(' \r\nSelect Geofence Tab. \r\n Enter address, click find. \r\n Select the drawing tool, drag the box over the desired area. \r\n Enter an email address or phone with the \'+\' 1 Prefix, enter the password. \r\n Select the fence type, then click SET. ');
       }
       if (buttontext == "Set") {
-        alert('� After clicking Geofence, drawing icons will appear at the top of the screen. \n� The hand icon will move the map. The middle icon will draw lines that you can connect to make a geofence. The last icon will draw squares to become the geofence.  \n� Next, enter an email (or phone with \'+ \' prefix), and enter the password 0000 .\n� Select the fence type, then click SET.\n� Click todays date on calendar to cancel.');
+        alert('\r\n After clicking Geofence, drawing icons will appear at the top of the screen. \r\n The hand icon will move the map. \r\nThe middle icon will draw lines that you can connect to make a geofence.\r\n The last icon will draw squares to become the geofence.  \r\n Next, enter an email (or phone with \'+ \' prefix), and enter the password 0000 .\r\n Select the fence type, then click SET.\r\n Click todays date on calendar to cancel.');
       }
     }
     getBatteryImage();
